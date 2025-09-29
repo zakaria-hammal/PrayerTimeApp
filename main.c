@@ -196,6 +196,8 @@ int main(int argc, char* argv[])
         "/home/zakaria/Documents/PrayerTimeApp/prayer.png"
     );
 
+    notify_notification_set_timeout(n, 10000);
+
     notify_notification_show(n, NULL);
     
     g_object_unref(G_OBJECT(n));
@@ -219,6 +221,8 @@ int main(int argc, char* argv[])
                     body,
                     "/home/zakaria/Documents/PrayerTimeApp/prayer.png"
                 );
+
+                notify_notification_set_timeout(n, 10000);
             
                 notify_notification_show(n, NULL);
                 
@@ -239,6 +243,8 @@ int main(int argc, char* argv[])
                         body,
                         "/home/zakaria/Documents/PrayerTimeApp/prayer.png"
                     );
+
+                    notify_notification_set_timeout(n, 10000);
                 
                     notify_notification_show(n, NULL);
                     
@@ -256,6 +262,8 @@ int main(int argc, char* argv[])
                         body,
                         "/home/zakaria/Documents/PrayerTimeApp/prayer.png"
                     );
+
+                    notify_notification_set_timeout(n, 10000);
                 
                     notify_notification_show(n, NULL);
                     
