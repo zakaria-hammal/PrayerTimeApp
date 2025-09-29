@@ -1,0 +1,15 @@
+[Unit]
+Description=Prayer Time Notification Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/home/zakaria/.prayer_time_app/prayer_time_app
+Restart=always
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/%U
+ExecStartPre=/bin/sleep 60
+
+[Install]
+WantedBy=default.target
