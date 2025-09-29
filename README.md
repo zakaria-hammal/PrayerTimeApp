@@ -45,8 +45,8 @@ sudo apt install build-essential libssl-dev libcjson-dev libnotify-dev systemd
 Clone the repo and compile:
 
 ```bash
-git clone https://github.com/yourusername/prayertimer.git
-cd prayertimer
+git clone https://github.com/zakaria-hammal/PrayerTimeApp.git
+cd PrayerTimeApp
 
 gcc main.c queue.c -o prayertimer \
   -lssl -lcrypto -lcjson -lnotify -Wall
